@@ -1,0 +1,14 @@
+THIS IS BEING ADDED AS PROOF OF WORK BECAUSE NO ACTUAL CODING WAS NEEDED FOR ANY OF THIS
+
+Hey Steve,
+
+I just finished setting up the user login and registration for your site and it's now live.
+
+Joseph and I will begin figuring out how the database needs to be laid out for the event scheduler and will most likely be emailing you within the next couple of days regarding the database and certain attributes you want saved. For now, I would recommend that you get as many coworkers to sign up for the site as you can just to make sure everything is working as it's suppose to. Please let us know if something isn't to your liking or isn't functioning in the correct manner.
+
+Thanks, 
+Jonathan
+
+p.s. I also changed the navigation bar at the top of your website. Less clicks are typically a more desirable attribute in a website so there's no longer a menu button that is used to display the information. I can easily change it back though if you prefer it the other way. 
+
+I also created a couple of groups, general and admin, later on we'll use these groups to give certain website permissions to specific users. When someone signs up for the site they are put into the 'general group' and you are the only person that will be able to add people to the 'admin group'. The general group will gain access to the event scheduler we're creating and the admin group will have the same rights as general plus the ability to add/remove events from the website.
