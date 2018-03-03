@@ -32,4 +32,5 @@
 	// AND Condition syntax is -- IF(AND(condition1 = "yes", condition2 = "yes"), if both "yes" do this, else do this)
 	// If either cell F2 or G2 are empty then nothing is generated. F2 is what the user sees and G2 is the actual link.
 	// This conditional statement will create an anchor tag that opens a new browser tab with the href from G2.
+	// <> means not equal, char(34) is used to insert quotaion mark
 	IF(AND(F2 <> "", G2 <> ""), CONCATENATE("<br><a target=", char(34), "_blank", char(34), "href=", char(34), G2 , char(34) , ">" , F2, "</a>") , ""))
