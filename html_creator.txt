@@ -1,0 +1,35 @@
+// Jonathan Jeans
+
+// This function was created using Google Sheets
+// It's main purpose is to take parameters from a user and then create the html needed for input
+
+// CONCATENATE function is used to join all of the text fields entered by user
+=CONCATENATE(
+
+	// If condition syntax is -- IF(A1 = "yes", do this, else do this)
+	// A2 is the description of the event
+	// The condition checks to see if the current cell is blank
+	// If cell A2 is blank nothing happens, otherwise, The word DESCRIPTION is added and bolded and 
+	// followed by a break tag. Then the users input is added with a following break tag.
+	IF(A2 = "", "",CONCATENATE("<br><b>Description</b><br>", A2, "<br>")), 
+	
+	// B2 is the Date of the event
+	// If cell B2 is blank nothing happens, otherwise, The word DATE is added and bolded and 
+	// followed by a break tag. Then the users input is added with a following break tag.
+	IF(B2 = "", "",CONCATENATE("<br><b>Date</b><br>", B2, "<br>")), 
+	
+	// C2 is the Time of the event
+	// If cell C2 is blank nothing happens, otherwise, The word TIME is added and bolded and 
+	// followed by a break tag. Then the users input is added with a following break tag.
+	IF(C2 = "", "",CONCATENATE("<br><b>Time</b><br>", C2, "<br>")),
+	
+	// D2 is the Location of the event
+	// If cell C2 is blank nothing happens, otherwise, The word LOCATION is added and bolded and 
+	// followed by a break tag. Then the users input is added with a following break tag.
+	IF(D2 = "", "",CONCATENATE("<br><b>Location</b><br>", D2, "<br>")),
+	IF(E2 = "", "",CONCATENATE(E2, "<br>")),
+	
+	// AND Condition syntax is -- IF(AND(condition1 = "yes", condition2 = "yes"), if both "yes" do this, else do this)
+	// If either cell F2 or G2 are empty then nothing is generated. F2 is what the user sees and G2 is the actual link.
+	// This conditional statement will create an anchor tag that opens a new browser tab with the href from G2.
+	IF(AND(F2 <> "", G2 <> ""), CONCATENATE("<br><a target=", char(34), "_blank", char(34), "href=", char(34), G2 , char(34) , ">" , F2, "</a>") , ""))
