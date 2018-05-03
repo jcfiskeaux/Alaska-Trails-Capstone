@@ -1,6 +1,5 @@
 # Alaska-Trails-Capstone
 This repository includes the files and code snippets we used to implement the Mapping Event Scheduler for Alaska-Trails. 
-
 This includes files such as: 
   - Google Sheets
   - Embedded Code Blocks
