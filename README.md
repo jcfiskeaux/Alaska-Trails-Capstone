@@ -1,10 +1,10 @@
 # Alaska-Trails-Capstone
 This repository includes the files and code snippets we used to implement the Mapping Event Scheduler for Alaska-Trails. 
 This includes files such as: 
-  - Google Sheets
-  - Embedded Code Blocks
-  - Javascript
-  - Google API functions
+  1. Google Sheets
+  2. Embedded Code Blocks
+  3. Javascript
+  4. Google API functions
   
 * Most of the Google API functions are found within the Google Sheets. Simply select a cell and view the functions used to see how things are done.
 * There was a web scraper and an HTML generator implemented in Google Sheets. The test documents have been uploaded as well as the master copy of the file.
